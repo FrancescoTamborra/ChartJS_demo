@@ -5,14 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Chart.js</title>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
     <div class="container-fluid">
       <h1> Yo World </h1>
+      <div class="row" >
+        <canvas id="chart_1" width="400" height="400"></canvas>
+      </div>
+      <div class="row">
+        <canvas id="digits_bar" width="400" height="400"></canvas>
+      </div>
+      <div class="row">
+        <canvas id="digits_radar" width="400" height="400"></canvas>
+      </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </html>
